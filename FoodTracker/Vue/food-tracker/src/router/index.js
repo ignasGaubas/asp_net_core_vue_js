@@ -29,7 +29,15 @@ let router = new Router({
 	{
   	path: '/implicit/callback',
   	component: Auth.handleCallback()
-	},
+  },
+  {
+    path: '/food-records',
+    name: 'FoodRecords',
+    component: FoodRecords,
+    meta: {
+      requiresAuth: true
+    }
+  },
   ]
 })
 
