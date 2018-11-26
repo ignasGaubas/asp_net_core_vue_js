@@ -1,0 +1,6 @@
+/home/ignas/Courses/asp_net_core_vue_js/FoodTracker/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.csprojAssemblyReference.cache
+/home/ignas/Courses/asp_net_core_vue_js/FoodTracker/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.csproj.CoreCompileInputs.cache
+/home/ignas/Courses/asp_net_core_vue_js/FoodTracker/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.RazorAssemblyInfo.cache
+/home/ignas/Courses/asp_net_core_vue_js/FoodTracker/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.RazorAssemblyInfo.cs
+/home/ignas/Courses/asp_net_core_vue_js/FoodTracker/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.AssemblyInfoInputs.cache
+/home/ignas/Courses/asp_net_core_vue_js/FoodTracker/AspNetCore/obj/Debug/netcoreapp2.1/AspNetCore.AssemblyInfo.cs
