@@ -19,23 +19,38 @@
 </template>
 
 <script>
-
-  export default {
-    name: 'app',
-    data () {
-      return {
-        user: null
-      }
+export default {
+  name: "app",
+  data() {
+    return {
+      user: null
+    };
+  },
+  async created() {
+    await this.refreshUser();
+  },
+  watch: {
+    $route: "onRouteChange"
+  },
+  methods: {
+    login() {
+      this.$auth.loginRedirect();
     },
-    methods: {
-      login () {
-
-      },
-      async logout () {
-
-      }
+    async onRouteChange() {
+      // every time a route is changed refresh the user details
+      await this.refreshUser();
+    },
+    async refreshUser() {
+      // get new user details and store it to user object
+      this.user = await this.$auth.getUser();
+    },
+    async logout() {
+      await this.$auth.logout();
+      await this.refreshUser();
+      this.$router.push("/");
     }
   }
+};
 </script>
 
 <style>
@@ -44,7 +59,7 @@ body {
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -68,7 +83,7 @@ header span {
   position: relative;
   font-size: 20px;
   line-height: 1;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   font-weight: 400;
   box-sizing: border-box;
   padding-top: 16px;
