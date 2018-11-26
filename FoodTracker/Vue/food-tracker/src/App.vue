@@ -7,6 +7,7 @@
         <b-collapse is-nav id="nav-collapse">
           <b-navbar-nav>
             <b-nav-item to="/food-records">Food Records</b-nav-item>
+            <b-nav-item to="/test">Test</b-nav-item>
             <b-nav-item href="#" @click.prevent="login" v-if="!user">Login</b-nav-item>
             <b-nav-item href="#" @click.prevent="logout" v-else>Logout</b-nav-item>
           </b-navbar-nav>
